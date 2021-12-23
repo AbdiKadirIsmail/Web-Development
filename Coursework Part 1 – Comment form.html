@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Comments Form</title>
+<link rel="stylesheet" href="Coursework Part 1 – CSS .css" type = "text/css">
+<script src="New.js"></script>
+</head>
+<body>
+	<header>
+		<div class = "container">
+		<div class = "logo">
+			<img src="face off.png" alt="Face off" width="200"  style="float: ;">
+			</div>
+			<ul>
+			<li><a class="active" style="padding:10px" href="Coursework Part 1 –  main page .html">Home</a></li>
+			<li><a style="padding:10px" href="Coursework Part 1 – Comment form.html">Comment Form</a></li>
+			<li><a style="padding:10px" href="Coursework Part 1 –  login.html">Login</a></li>
+			<li><a style="padding:10px" href="#">Quiz</a></li>
+			<li><a style="padding:10px" href="#">Shop</a></li>
+			<li><a style="padding:10px" href= "Coursework Part 1 –  CV.html">CV</a></li>
+			<li><a style="padding:10px" href="#">About</a></li>
+			</ul>
+		</div>
+	</header>
+	<div class = "container">
+		<div class = "cim">
+			<h4>Comment Form<h4>
+		</div>
+	
+		<div class = "form">
+			<form name="myForm" action="/action_page.php" onsubmit="return promptPopup()" method="post">
+			<br><label for = "fname" >First name:</label><input type="text" name="fname" Placeholder="First Name" size= "50px" required >
+			<br><label for="name">Surname: </label>
+			<input type="text" name="sname" id="name" placeholder="Surname" size= "50px" required >
+			<br><label for="email">Email:</label>
+			<input type="email" name="email" id="email" placeholder="Your Email Address" size= "50px"  required>
+			<br><label>Date:</label> <input type= "date" name="date" id = "date" required>
+		
+			<br><label for="rate">Rate the site (out of Five):</label>
+			1<input type="radio" name="rate" id="rate" 
+			value="1" checked>
+			2<input type="radio" name="rate" id="rate" 
+			value="2">
+			3<input type="radio" name="rate" id="rate" 
+			value="3">
+			4<input type="radio" name="rate" id="rate" 
+			value="4">
+			5<input type="radio" name="rate" id="rate" 
+			value="5">
+			<br><label for="feedback">Comments: </label>
+			<textarea name="feedback" id="feedback" 
+			rows="10" cols="70"></textarea>
+			<br><label><input type ="submit" value = "Add Comment" onclick = "promptPopup(event)"></label>
+			</form>
+			</div>
+	</div>	
+		
+
+
+</body>
+</html>
